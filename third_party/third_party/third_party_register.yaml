@@ -1,0 +1,106 @@
+project: ER41 Firmware
+last_checked: 2026-01-02
+
+open_source_libraries:
+
+  - name: busybox
+    current_version: 1.36.1
+    latest_version: 1.36.1
+    license: GPL-2.0-only
+    upstream_url: https://busybox.net
+    source_repo: https://git.busybox.net/busybox
+    notes: Includes sed, udhcp and other applets
+
+  - name: openssl
+    current_version: 3.5.4
+    latest_version: 3.5.4
+    license: OpenSSL OR Apache-2.0
+    upstream_url: https://www.openssl.org
+    source_repo: https://github.com/openssl/openssl
+
+  - name: linux_kernel
+    current_version: 6.1.111
+    latest_version: 6.1.113
+    license: GPL-2.0-only
+    upstream_url: https://www.kernel.org
+    source_repo: https://git.kernel.org
+    notes: LTS branch
+
+  - name: u-boot
+    current_version: 2025.01
+    latest_version: 2025.01
+    license: GPL-2.0-only
+    upstream_url: https://www.denx.de/wiki/U-Boot
+    source_repo: https://source.denx.de/u-boot/u-boot
+
+  - name: glibc
+    current_version: 2.42
+    latest_version: 2.42
+    license: LGPL-2.1-or-later
+    upstream_url: https://www.gnu.org/software/libc/
+    source_repo: https://sourceware.org/git/glibc.git
+
+  - name: zlib
+    current_version: 1.3.1
+    latest_version: 1.3.1
+    license: Zlib
+    upstream_url: https://zlib.net
+    source_repo: https://github.com/madler/zlib
+
+  - name: stunnel
+    current_version: 5.76
+    latest_version: 5.76
+    license: GPL-2.0-only
+    upstream_url: https://www.stunnel.org
+    source_repo: https://github.com/mtrojnar/stunnel
+
+  - name: miniupnpd
+    current_version: 2.3.0
+    latest_version: 2.3.3
+    license: UNKNOWN
+    upstream_url: https://miniupnp.tuxfamily.org
+    source_repo: https://github.com/miniupnp/miniupnp
+
+  - name: e2fsprogs
+    current_version: 1.47.2
+    latest_version: 1.47.2
+    license: GPL-2.0-only
+    upstream_url: https://e2fsprogs.sourceforge.net
+    source_repo: https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git
+
+  - name: ppp
+    current_version: 2.5.0
+    latest_version: 2.5.0
+    license: UNKNOWN
+    upstream_url: https://ppp.samba.org
+    source_repo: https://github.com/ppp-project/ppp
+
+  - name: bc
+    current_version: 7
+    latest_version: 7
+    license: GPL-3.0-or-later
+    upstream_url: https://www.gnu.org/software/bc/
+    source_repo: https://git.savannah.gnu.org/git/bc.git
+
+vendor_components:
+
+  - name: HFWebplugin-V1.exe
+    version: 6.0.0.1
+    type: proprietary
+    vendor: HiFocus
+    vendor_url: https://www.hifocuscctv.com
+    notes: Windows browser plugin
+
+  - name: ER41 firmware image
+    version: V30.1.01.20240418
+    type: firmware_blob
+    vendor: HiFocus
+    vendor_url: https://www.hifocuscctv.com
+    notes: Camera firmware package
+
+  - name: unknown_binary_0-136590
+    version: 6.0.0.1
+    type: unknown
+    vendor_url: unknown
+    action: investigate_or_remove
+
